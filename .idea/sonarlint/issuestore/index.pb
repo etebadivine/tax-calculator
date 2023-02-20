@@ -59,7 +59,5 @@ Fnsano-base-templates-master/src/main/kotlin/com/generis/model/Quote.kt,1\e\1ed
 Nnsano-base-templates-master/src/main/kotlin/com/generis/config/plugins/HTTP.kt,d\4\d4ad56f0da82634a4a72be5670854e695fde7272
 w
 Gnsano-base-templates-master/src/main/kotlin/com/generis/web/TaxRoute.kt,1\8\189a9f53b76ada57e2a6687b40780a53d8bb301d
-Ö
-Unsano-base-templates-master/src/main/kotlin/com/generis/controller/QuoteController.kt,3\e\3e21896d6a39478bdb90de2a9eda1c7ee878227a
 Å
 Qnsano-base-templates-master/src/main/kotlin/com/generis/model/integration/Mail.kt,6\4\643139abb3af1696fb73885f3fcdd8bff25a3deb
