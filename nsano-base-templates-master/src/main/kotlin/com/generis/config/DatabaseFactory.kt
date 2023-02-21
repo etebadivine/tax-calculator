@@ -3,7 +3,7 @@ package com.generis.config
 import com.generis.com.generis.repo.Quotes
 import com.generis.com.generis.repo.Taxes
 import com.generis.config.Configuration.getSystemProperties
-import com.generis.repo.Assets
+//import com.generis.repo.Assets
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import org.flywaydb.core.Flyway
@@ -42,7 +42,7 @@ object DatabaseFactory {
 
     private fun runUpdateAndMigration(){
         transaction {
-            SchemaUtils.createMissingTablesAndColumns(Assets)
+//            SchemaUtils.createMissingTablesAndColumns(Assets)
             SchemaUtils.createMissingTablesAndColumns(Taxes)
             SchemaUtils.createMissingTablesAndColumns(Quotes)
         }

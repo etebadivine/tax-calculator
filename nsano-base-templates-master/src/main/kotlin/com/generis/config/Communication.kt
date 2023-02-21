@@ -8,8 +8,8 @@ import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule
 import com.generis.com.generis.controller.QuoteImpl
 import com.generis.config.Configuration.systemPropertiesFilePath
-import com.generis.controller.AssetImpl
-import com.generis.repo.AssetService
+//import com.generis.controller.AssetImpl
+//import com.generis.repo.AssetService
 import com.generis.com.generis.stream.kafka.StreamTopic
 import com.generis.config.Configuration.getSystemProperties
 import com.generis.repo.QuotesService
@@ -43,8 +43,8 @@ object Communication {
             bindConstant(tag = "systemProperties") { getSystemProperties() }
             bindSingleton { vertx }
 
-            bindSingleton { AssetImpl(di) }
-            bindSingleton { AssetService() }
+//            bindSingleton { AssetImpl(di) }
+//            bindSingleton { AssetService() }
             bindSingleton { QuoteImpl(di) }
             bindSingleton { QuotesService() }
              bindSingleton { TaxService() }
