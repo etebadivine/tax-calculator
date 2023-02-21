@@ -61,7 +61,6 @@ class QuoteImpl(override val di: DI):  QuoteController, DIAware {
             senderName = mailRequestDto.senderName,
             senderEmail = mailRequestDto.senderEmail,
             password = mailRequestDto.password,
-            quoteId = mailRequestDto.quoteId
         )
 
         val sendMail = mailService.sendMail(mailRequestDto)
@@ -76,7 +75,6 @@ class QuoteImpl(override val di: DI):  QuoteController, DIAware {
             recipient = smsRequestDto.recipient,
             message = quote.toString(),
             sender = quote.toString(),
-            quoteId = quote.toString()
         )
 
         val sendSMS = smsService.sendSms(smsRequest.message, smsRequest.recipient)

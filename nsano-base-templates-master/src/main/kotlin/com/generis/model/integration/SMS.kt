@@ -12,8 +12,7 @@ data class SMSRequestDto(
     val recipient: String,
     @Required
     val message: String,
-    @Required
-    var quoteId: String,
+
 ) {
     fun toRequestJsonString(): String {
         return "{\"sender\": \"$sender\",\"recipient\":\"$recipient\",\"message\":\"$message\"}"

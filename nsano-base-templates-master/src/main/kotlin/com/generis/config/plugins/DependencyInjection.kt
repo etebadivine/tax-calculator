@@ -6,6 +6,8 @@ import com.generis.config.Communication
 import com.generis.config.Configuration.getSystemProperties
 import com.generis.controller.AssetImpl
 import com.generis.events.ServiceEventsListener
+import com.generis.integrations.MailService
+import com.generis.integrations.SmsService
 import com.generis.repo.AssetService
 import com.generis.repo.QuotesService
 import com.generis.repo.TaxService
@@ -33,6 +35,8 @@ fun Application.configureDI(){
         bindSingleton { AssetService() }
         bindSingleton { QuoteImpl(di) }
         bindSingleton { QuotesService() }
+        bindSingleton { MailService(di) }
+        bindSingleton { SmsService(di) }
         bindSingleton { TaxService() }
     }
 

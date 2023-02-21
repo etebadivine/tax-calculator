@@ -21,8 +21,7 @@ data class MailRequestDto(
     val senderEmail: String? = "Banbo",
     @Required
     val password: String?= "",
-    @Required
-    var quoteId: String,
+
 ) {
     fun toRequestJsonString(): String {
         return  "{" +
